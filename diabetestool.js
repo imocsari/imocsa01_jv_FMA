@@ -17,7 +17,7 @@ function getCheckedRadio(op) {
   }
 
 function getResult() {
-  var score = (parseInt(getCheckedRadio('op1'))
+  var score = (parseInt(getCheckedRadio('op1')) 
        + parseInt(getCheckedRadio('op2'))
        + parseInt(getCheckedRadio('op3'))
        + parseInt(getCheckedRadio('op4')));
