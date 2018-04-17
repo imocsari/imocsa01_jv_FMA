@@ -1,11 +1,9 @@
+// Submit function fires the javascript functions
 function Submit() {
   displayResult();
 
   }
-
-
-
-
+// Returns each score from radio buttons
 function getCheckedRadio(op) {
     var radioButtons = document.getElementsByName(op);
     for (var x = 0; x < radioButtons.length; x ++) {
@@ -15,15 +13,15 @@ function getCheckedRadio(op) {
      }
      return score;
   }
-
+// Returns score result from radio buttons
 function getResult() {
-  var score = (parseInt(getCheckedRadio('op1')) 
+  var score = (parseInt(getCheckedRadio('op1'))
        + parseInt(getCheckedRadio('op2'))
        + parseInt(getCheckedRadio('op3'))
        + parseInt(getCheckedRadio('op4')));
   return score;
 }
-
+// Returns risk factor depending on the score
 function riskFactor() {
 
   if (getResult() <= 15) {
@@ -43,7 +41,7 @@ function displayResult() {
   )
   result.className = 'result';
 }
-
+// Function returns the name of the risk factor if the score over 10
 function highRisk() {
   var age = parseInt(getCheckedRadio('op1'));
   var BMI = parseInt(getCheckedRadio('op2'));

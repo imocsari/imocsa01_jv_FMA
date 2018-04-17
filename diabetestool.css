@@ -8,8 +8,22 @@
   padding-left: 1em;
 }
 
-[tooltip]:before {
-    position : absolute;
-     content : attr(tooltip);
-     opacity : 0;
+.frame {
+  border: 1px solid grey;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.radio {
+  width: 500px;
+  border: 2px solid grey;
+  padding: 2px 2px 2px 2px;
+}
+
+
+#result {
+  width: 300px;
+  border: 3px solid grey;
+  padding: 25px;
+  margin: 25px;
 }
